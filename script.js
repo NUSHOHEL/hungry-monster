@@ -1,11 +1,12 @@
-function getInputValue(){
+ getInputValue = () => {
     let inputValue = document.getElementById('input-field').value;
     let api = `https://www.themealdb.com/api/json/v1/1/search.php?s=${inputValue}`
+    // let Api =`https://www.themealdb.com/api/json/v1/1/search.php?f=${inputValue}`
     fetch(api)
     .then(res => res.json())
     .then(data => displayMeals(data));
  
-    function displayMeals(data){
+     displayMeals = data =>{
             data.meals.forEach(meal => {
         let mealsDiv = document.getElementById('meals');
         let mealDiv = document.createElement('div');
@@ -14,8 +15,7 @@ function getInputValue(){
         <img onclick="displayMealDetails(${meal.idMeal})" src="${meal.strMealThumb}">
         <div class="heading">
         <h6>${meal.strMeal}</h6>
-        </div>
-        
+        </div>       
         `;
         mealDiv.innerHTML = mealList;
         mealsDiv.appendChild(mealDiv);
@@ -24,14 +24,14 @@ function getInputValue(){
 
 }
 
-function displayMealDetails(data){
+ displayMealDetails = data =>{
     const url = 'https://www.themealdb.com/api/json/v1/1/lookup.php?i='+ data+'';
     fetch(url)
     .then(response => response.json())
     .then(data => displayDetails(data.meals));
 }
 
-function displayDetails(meals){
+ displayDetails = meals => {
 meals = meals[0];
 console.log(meals);
 const mealDiv = document.getElementById('mealDetail');
