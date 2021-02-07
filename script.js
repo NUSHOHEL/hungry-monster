@@ -31,7 +31,7 @@
     .then(data => displayDetails(data.meals));
 }
 
- displayDetails = meals => {
+ displayDetails = meals =>{
 meals = meals[0];
 console.log(meals);
 const mealDiv = document.getElementById('mealDetail');
