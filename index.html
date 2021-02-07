@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Hungry Monster</title>
+</head>
+<body>
+    <section class="container" >
+        <nav class="navbar navbar-expand-lg navbar-light d-flex">
+            <div class="container-fluid">
+              <a class="navbar-brand" style="font-weight: bolder; font-style: oblique;" href="#"> Coocking master</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                <div style="color: #3C3C3C ; font-weight: 500;" class="navbar-nav">
+                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  <a class="nav-link active ms-4" href="#">Product</a>
+                  <a class="nav-link active ms-4" href="#">About us</a>
+                  <a class="nav-link active ms-4" href="#" tabindex="-1" aria-disabled="true">Contact us</a>
+                </div>
+              </div>
+            </div>
+          </nav>
+    </section>
+    <section class="container" style="max-width: 450px; margin-left: 30vw; margin-top: 50px;">
+        <div class="input-group">
+            <input id="input-field" type="text" class="form-control" placeholder="Search for Meal" aria-label="Recipient's username" aria-describedby="basic-addon2">
+            <div class="input-group-append">
+              <button onclick="getInputValue()" class="btn btn-success" type="button">Search</button>
+            </div>
+          </div>
+    </section>
+    <section id="meal-section" class="container">
+
+        <div id="mealDetail">
+
+        </div>
+        <div id="meals" >
+           
+    
+        </div>
+
+    </section>
+
+
+
+
+<script src="script.js"></script>
+    
+</body>
+</html>
