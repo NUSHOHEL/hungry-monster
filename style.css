@@ -39,8 +39,9 @@ body{
     font-family: monospace;
 }
 .heading{
-    margin-top: 10px;
+    padding-top: 10px;
     overflow: hidden;
+    height: 50px;
 }
 
 .detailsMeal{
