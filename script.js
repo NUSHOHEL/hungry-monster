@@ -55,8 +55,10 @@ displayDetails = meals =>{
     mealDetails.className = 'detailsMeal'
     const element = `
     <img src=${meals.strMealThumb}>
-    <h4>${meals.strMeal}</h4>
-    <h6>Ingredient</h6>
+    <div class = detailHeadings>
+        <h4>${meals.strMeal}</h4>
+        <h6>Ingredient</h6>
+    </div>
     <ul>
         <li>${meals.strMeasure1} ${meals.strIngredient1}</li>
         <li>${meals.strMeasure2} ${meals.strIngredient2}</li>

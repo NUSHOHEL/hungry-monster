@@ -21,8 +21,8 @@ body{
     border: 1px solid goldenrod;
     border-radius: 20px;
     text-align: center;
-    width: 200px;
-    height: 250px;
+    width: 250px;
+    height: 300px;
     background-color: white;
     overflow: hidden;
     
@@ -58,4 +58,6 @@ body{
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 }
-
+.detailHeadings{
+    margin-left: 20px;
+}
