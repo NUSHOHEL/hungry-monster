@@ -13,17 +13,19 @@ body{
 }
 #meals{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 50px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
 }
 .meal{
-    margin-top: 20px;
+    margin-top: 5px;
     border: 1px solid goldenrod;
     border-radius: 20px;
     text-align: center;
-    width: 300px;
-    height: 400px;
+    width: 200px;
+    height: 250px;
     background-color: white;
+    overflow: hidden;
+    
 }
 .meal img{
     width: 100%;
@@ -31,22 +33,23 @@ body{
     border-top-right-radius: 20px;
 }
 #meal-section{
-    margin-top: 100px;
+    margin-top: 50px;
 }
 .meal h1{
     font-family: monospace;
 }
 .heading{
-    margin-top: 30px;
+    margin-top: 10px;
+    overflow: hidden;
 }
 
 .detailsMeal{
 
     margin-top: 20px;
-    border: 1px solid goldenrod;
+    border: 1px solid rgb(247, 178, 4);
     border-radius: 20px;
     /* text-align: center; */
-    width: 300px;
+    width: 250px;
     height: fit-content;
     background-color: white;
 }
@@ -55,6 +58,4 @@ body{
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 }
-.detailsMeal h4 h6{
-    padding: auto;
-}
+
