@@ -11,13 +11,10 @@ getInputValue = () =>{
         .then(data => displayMeals(data))
       }
 
-
 let defaultbody = document.getElementById('meals').innerHTML ="";
 let defaultMealDetails = document.getElementById("mealDetail").innerHTML = "";
 
-
 displayMeals = data =>{
-
 
             if(data.meals == null){
                 swal({
