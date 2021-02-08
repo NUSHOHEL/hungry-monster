@@ -1,7 +1,7 @@
  getInputValue = () => {
     let inputValue = document.getElementById('input-field').value;
+    
     let api = `https://www.themealdb.com/api/json/v1/1/search.php?s=${inputValue}`
-    // let Api =`https://www.themealdb.com/api/json/v1/1/search.php?f=${inputValue}`
     fetch(api)
     .then(res => res.json())
     .then(data => displayMeals(data));
